@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@media (max-width > 500px) {
+    .hidden-sm {
+        display: none;
+    }
+}
+.login_png{
+    height: 30px;
+  }
+  svg{
+    display: inline;
+  }

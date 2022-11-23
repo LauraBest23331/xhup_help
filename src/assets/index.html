@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>小鹤入门</title>
+    <link rel="icon" href="../favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="keywords" content="小鹤双拼,小鹤音形,双拼,输入法" />
+    <meta name="description" content="一个简单高效输入法" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/theme-simple.css" title="Simple">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Alternate Stylesheets -->
+    <link rel="stylesheet alternate" href="assets/css/theme-simple.css" title="Simple">
+    <link rel="stylesheet alternate" href="assets/css/theme-simple-dark.css" title="Simple Dark">
+    <style>
+      nav.app-nav li ul {
+        min-width: 100px;
+      }
+
+      #carbonads {
+        box-shadow: none !important;
+        width: auto !important;
+      }
+    </style>
+  </head>
+
+<body>
+    <div id="app"></div>
+
+    <!-- JavaScript -->
+    <script>
+        // Docsify
+        window.$docsify = {
+            // GENERAL
+            // -----------------------------------------------------------------
+            name       : '<span><img src="assets/img/logo.png" width="129" height="66"></span>',
+            repo       : 'https://flypy.com',
+            coverpage  : false,
+            homepage   : 'readme.md',
+            loadNavbar   : '_navbar.md',
+            loadSidebar: '_sidebar.md',
+            // NAVIGATION
+            // -----------------------------------------------------------------
+            alias: {
+                '.*?/changelog': 'https://flypy.com',
+            },
+            auto2top   : true,
+            maxLevel   : 1,
+            autoHeader   : false,
+            mergeNavbar  : true,
+            subMaxLevel: 0,
+            relativePath: false,
+            topMargin: 50,
+            // PLUGINS
+            // -----------------------------------------------------------------
+            executeScript: true,
+            ga    : 'UA-100100910-3',
+            search: {
+                depth      : 3,
+                noData     : 'No results!',
+                placeholder: 'Search...'
+            }
+        };
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/search.min.js"></script>
+    <script src="assets/js/docsify.min.js"></script>
+    <script src="assets/js/prism-bash.min.js"></script>
+    <script src="assets/js/prism-markdown.min.js"></script>
+    <script src="assets/js/prism-nginx.min.js"></script>
+    <script src="assets/js/prism-php.min.js"></script>
+    <script>
+      (function() {
+        function loadJS(src, attrs) {
+          document.write(
+            '<script src="' + src + '" ' + (attrs || '') + '><\/script>'
+          );
+        }
+
+        // Public site only
+        if (/docsify/.test(location.host)) {
+          loadJS('assets/js/ga.min.js');
+          loadJS('assets/js/matomo.min.js');
+        }
+      })();
+    </script>
+    <!---<script src="assets/js/docsify-pagination.min.js"></script>--- >
+    <script src="assets/js/vue.min.js"></script>
+  </body>
+</html>
